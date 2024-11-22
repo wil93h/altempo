@@ -29,6 +29,7 @@ export default [
     },
     plugins: [
       "react-refresh",
+      "tailwindcss", 
       "prettier"
     ],
     rules: {
@@ -44,6 +45,8 @@ export default [
           "endOfLine": "auto",
         },
       ],
+      "tailwindcss/classnames-order": "warn",
+      "tailwindcss/no-custom-classname": "warn", 
     },
   },
 ];
