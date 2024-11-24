@@ -6,3 +6,90 @@ html, body {
   min-width: 300px;
   margin: 0;
 }
+.p-inputwrapper, .p-password, .p-dropdown, .p-calendar {
+  border: 2px solid #B4BAC5 ; /* Borde normal */
+  border-radius: 8px; /* Puedes cambiar el radio del borde */
+  transition: border-color 0.3s ease-in-out; /* Animación suave para el cambio de color */
+}
+
+/* Estilo de borde en foco para los componentes */
+.p-inputwrapper:focus-within, 
+.p-password:focus-within, 
+.p-dropdown:focus-within, 
+.p-calendar:focus-within {
+  border-color: #7505E0 !important; /* Borde cuando el componente está enfocado */
+}
+
+/* Estilo global para el contenedor de los componentes */
+.p-inputwrapper, .p-password, .p-dropdown, .p-calendar, .p-inputtext {
+  border: 2px solid #B4BAC5 !important; /* Borde normal */
+  border-radius: 8px; /* Puedes cambiar el radio del borde */
+  transition: border-color 0.3s ease-in-out; /* Animación suave para el cambio de color */
+}
+
+/* Estilo de borde en foco para los componentes */
+.p-inputwrapper:focus-within, 
+.p-password:focus-within, 
+.p-dropdown:focus-within, 
+.p-calendar:focus-within, 
+.p-inputtext:focus-within {
+  border-color: #7505E0 !important; /* Borde cuando el componente está enfocado */
+}
+
+/* Estilo para los input de password, dropdown, calendar, y inputtext */
+.p-password-input, 
+.p-inputtext, 
+.p-dropdown-input, 
+.p-calendar input {
+  color: #333333; /* Color del texto */
+  border: none; /* Elimina el borde predeterminado */
+  outline: none; /* Elimina el contorno del foco */
+  padding: 8px 12px; /* Ajuste del padding */
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilo cuando el componente tiene un borde de foco */
+.p-password-input:focus, 
+.p-inputtext:focus, 
+.p-dropdown-input:focus, 
+.p-calendar input:focus {
+  border-color: #7505E0 !important; /* Cambio de borde al hacer foco */
+  box-shadow: 0 0 0 2px rgba(117, 5, 224, 0.3); /* Sombra suave en foco */
+}
+
+/* Estilos para el componente Dropdown */
+.p-dropdown {
+  background-color: #ffffff; /* Fondo blanco para dropdown */
+}
+
+/* Estilos para el componente Calendar */
+.p-calendar .p-datepicker {
+  background-color: #ffffff; /* Fondo blanco para calendario */
+}
+
+/* Estilo para la etiqueta de los inputs */
+.p-inputtext:focus + .p-float-label, 
+.p-password-input:focus + .p-float-label, 
+/* .p-dropdown-input:focus + .p-float-label,  */
+.p-calendar input:focus + .p-float-label {
+  color: #7505E0; /* Color de la etiqueta cuando el componente está en foco */
+}
+
+/* Estilo de los botones dentro de los componentes */
+
+/* Estilo para el texto de los inputs */
+.p-inputtext::placeholder, 
+.p-password-input::placeholder, 
+.p-dropdown-input::placeholder, 
+.p-calendar input::placeholder {
+  color: #B4BAC5 !important; /* Color para los placeholders */
+}
+
+.p-dropdown-label {
+  border: none !important; /* Elimina el borde predeterminado */
+  height: 100%; /* Asegura que el label tome el 100% de la altura del contenedor */
+  display: flex;
+  align-items: center;
+  size: 16px;
+  font-weight: 400;
+}

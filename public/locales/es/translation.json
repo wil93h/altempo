@@ -10,18 +10,34 @@
   "generalInformation": "información general",
   "shareAboutYou": "Compártelos un poco de ti.",
   "fullName": "Nombre completo",
-  "email": "Correo electrónico",
   "emailExample": "nombre@test.com",
-  "password": "Contraseña",
   "name": "nombre",
-  "confirmPassword": "Confirmación de contraseña",
   "passwordMinLength": "Asegúrate de cumplir con 8 caracteres mínimo.",
   "countryOfResidence": "País de residencia",
   "dateOfBirth": "Fecha de nacimiento",
   "genderOptional": "Genero (opcional)",
   "phoneOptional": "Teléfono (opcional)",
-  "howDidYouHear": "¿Cómo nos conociste?",
   "cancel": "Cancelar",
   "continue": "Continuar",
-  "rightsReserved": "Todos los derechos reservados, 2024®"
+  "rightsReserved": "Todos los derechos reservados, {{year}}®",
+  "form": {
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "country": "País de Residencia",
+    "dob": "Fecha de Nacimiento",
+    "gender": "Género (Opcional)",
+    "phone": "Teléfono (Opcional)",
+    "howDidYouHear": "¿Cómo nos conociste?",
+    "submit": "Enviar",
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "minLength": "Debe tener al menos {{min}} caracteres.",
+      "email": "Debes ingresar un correo electrónico válido.",
+      "passwordMatch": "Las contraseñas deben coincidir.",
+      "phone": "El teléfono debe tener 10 dígitos.",
+      "date": "La fecha de nacimiento no puede ser en el futuro."
+    }
+  }
 }

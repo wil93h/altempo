@@ -10,18 +10,34 @@
   "generalInformation": "General information",
   "shareAboutYou": "Share a little about yourself.",
   "fullName": "Full name",
-  "email": "Email",
   "emailExample": "name@test.com",
-  "password": "Password",
   "name": "Name",
-  "confirmPassword": "Confirm password",
   "passwordMinLength": "Make sure to have at least 8 characters.",
   "countryOfResidence": "Country of residence",
   "dateOfBirth": "Date of birth",
   "genderOptional": "Gender (optional)",
   "phoneOptional": "Phone (optional)",
-  "howDidYouHear": "How did you hear about us?",
   "cancel": "Cancel",
   "continue": "Continue",
-  "rightsReserved": "All rights reserved, 2024®"
+  "rightsReserved": "All rights reserved, {{year}}®",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "country": "Country of Residence",
+    "dob": "Date of Birth",
+    "gender": "Gender (Optional)",
+    "phone": "Phone (Optional)",
+    "howDidYouHear": "How did you hear about us?",
+    "submit": "Submit",
+    "errors": {
+      "required": "This field is required.",
+      "minLength": "Must be at least {{min}} characters.",
+      "email": "You must enter a valid email address.",
+      "passwordMatch": "Passwords must match.",
+      "phone": "Phone number must be 10 digits.",
+      "date": "Date of birth cannot be in the future."
+    }
+  }
 }
