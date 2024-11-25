@@ -36,8 +36,12 @@
       "minLength": "Debe tener al menos {{min}} caracteres.",
       "email": "Debes ingresar un correo electrónico válido.",
       "passwordMatch": "Las contraseñas deben coincidir.",
-      "phone": "El teléfono debe tener 10 dígitos.",
+      "phone": "El teléfono debe tener al menos 8 dígitos.",
       "date": "La fecha de nacimiento no puede ser en el futuro."
     }
-  }
+  },
+  "view_video": "Ver video",
+  "profile_selected": "Perfil seleccionado",
+  "change_selection": "Cambiar selección",
+  "talent-hunter": "Talent Hunter"
 }

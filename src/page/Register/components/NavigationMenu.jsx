@@ -8,7 +8,7 @@ const NavigationMenu = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='bg-gradient-to-l from-[#F6F7F9] to-[#F0E9FF] rounded h-[68px]  flex justify-between align-middle items-center p-5 my-5' >
+    <div className='bg-gradient-to-l from-[#F6F7F9] to-[#F0E9FF] rounded h-[68px]  flex justify-between align-middle items-center p-5 my-2' >
     <div className='flex gap-3'>
       <img 
         className="!h-8"

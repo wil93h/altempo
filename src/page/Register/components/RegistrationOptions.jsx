@@ -5,7 +5,7 @@ const RegistrationOptions = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center space-y-4 py-4">
+    <div className="flex flex-col items-center space-y-4 py-2">
     <p className="text-gray-600 text-sm">{t("registerWith")}</p>
     <div className="flex justify-center space-x-4">
       <button

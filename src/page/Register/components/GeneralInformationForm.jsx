@@ -13,7 +13,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 const FormField = ({ name, label, component: Component, ...props }) => {
   const { control, formState: { errors } } = useFormContext();
   return (
-    <div className="field p-5 w-full">
+    <div className="field px-5 pb-7 w-full">
       <FloatLabel>
         <Controller
           name={name}
@@ -47,7 +47,7 @@ const GeneralInformationForm = () => {
       .required(t('form.errors.required')),
     phone: yup
       .string()
-      .matches(/^\d{10}$/, t('form.errors.phone'))
+      .matches(/^\d{8,}$/, t('form.errors.phone'))
       .nullable(),
     howDidYouHear: yup.string().required(t('form.errors.required')),
   });
