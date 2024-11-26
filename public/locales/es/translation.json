@@ -43,5 +43,51 @@
   "view_video": "Ver video",
   "profile_selected": "Perfil seleccionado",
   "change_selection": "Cambiar selección",
-  "talent-hunter": "Talent Hunter"
+  "talent-hunter": "Talent Hunter",
+  "steps":{
+    "step_of_total": "Paso {{current}} de {{total}}",
+    "what_are_you_interested_in_finding": "¿Qué estás interesado en encontrar?",
+    "search_for_an_instrument": "Buscar un instrumento",
+    "musicalization": "Musicalización",
+    "producer": "Productor",
+    "announcer": "Locutor",
+    "composer": "Compositor",
+    "singer": "Cantante",
+    "go_back": "Regresar"
+  },
+  "steps2":{
+    "important_in_musicians": "¿Qué consideras importante en los músicos que buscas?",
+    "select_options_to_prioritize": "Selecciona las opciones que quieras priorizar",
+    "responsibility": "Responsabilidad",
+    "ownMaterial": "Contar con material propio",
+    "materialProactivity": "Proactividad en materiales",
+    "personalBrand": "Que tenga una marca personal",
+    "closeLocation": "Cercano a mi ubicación",
+    "onlyGroups": "Solo que sean agrupaciones",
+    "creative": "Creativo",
+    "beginnerExperience": "Que tenga un nivel de experiencia principiante",
+    "intermediateExperience": "Que tenga un nivel de experiencia intermedio",
+    "advancedExperience": "Que tenga un nivel de experiencia alto",
+    "generateProposals": "Genere propuestas en el proceso",
+    "other": "Otro",
+    "shareGoal": "Comparte tu objetivo",
+    "maxCharacters": "500 carácteres max."
+  },
+  "steps3": {
+    "budget": "¿Cuál es tu presupuesto?",
+    "range": "${{min}} USD - ${{max}} USD",
+    "average": "Promedio: ${{average}} USD",
+    "skip": "Omitir",
+    "find": "Buscar servicio ideal"
+  },
+  "countries": {
+    "US": "Estados Unidos",
+    "SAL": "El Salvador"
+  },
+  "genderOptions": {
+    "M": "Hombre",
+    "F": "Mujer",
+    "O": "Otro"
+  }
+
 }

@@ -8,25 +8,41 @@ import { Button } from 'primereact/button';
 import { TfiBackLeft } from "react-icons/tfi";
 import PlayCircle from '../../assets/icons/play-circle-02.svg';
 import StepOptions from './components/StepOptions';
+import { useState } from 'react';
+import NavigationMenuStep from './components/NavigationMenuStep';
 
 
 const Register = () => {
   const { t } = useTranslation();
   const year = new Date().getFullYear()
+  const [changeStep, setChangeStep] = useState(false)
+
+  const changeToStep = () => {
+    if(!changeStep){
+      return [
+        <NavigationMenu/>,
+        <RegistrationOptions/>,
+        <GeneralInformationForm setChangeStep={setChangeStep}/>
+      ]
+    }else{
+      return [
+        <NavigationMenuStep/>,
+        <StepOptions/>
+      ]
+    }
+  }
+
   return (
       <div className='h-screen w-full p-8 flex '>
         <div className='flex flex-col align-middle h-full w-4/6  mx-10'>
           <MenuBarRegister/>
-          <NavigationMenu/>
-          <RegistrationOptions/>
-          <GeneralInformationForm/>
-          {/* <StepOptions/> */}
-          <footer class="text-center p-4">
+          {...changeToStep()}
+          <footer className="text-center p-4">
             <small>{t('rightsReserved', { year })}</small>
           </footer>
         </div>
 
-        <div className='h-full  w-2/6  bg-cover bg-center bg-no-repeat rounded-2xl'  style={{ backgroundImage: 'url("/src/assets/ef0a8a3dc7bd12aae8b9c6df6710d892.jpg"), radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%)'}}>
+        <div className='h-full w-2/6 bg-cover bg-center bg-no-repeat rounded-2xl'  style={{ backgroundImage: 'url("/src/assets/ef0a8a3dc7bd12aae8b9c6df6710d892.jpg"), radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%)'}}>
           <div className='flex flex-col h-full !justify-between '>
             <div className='w-full flex justify-end p-5'>
               <Button rounded type="submit" 

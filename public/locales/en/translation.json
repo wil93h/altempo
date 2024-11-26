@@ -40,8 +40,54 @@
       "date": "Date of birth cannot be in the future."
     }
   },
-  "view_video": "Ver video",
-  "profile_selected": "Perfil seleccionado",
-  "change_selection": "Cambiar selección",
-  "talent-hunter": "Talent Hunter"
+  "view_video": "View video",
+  "profile_selected": "Profile selected",
+  "change_selection": "Change selection",
+  "talent-hunter": "Talent Hunter",
+  "steps":{
+    "step_of_total": "Step {{current}} of {{total}}",
+    "what_are_you_interested_in_finding": "What are you interested in finding?",
+    "search_for_an_instrument": "Search for an instrument",
+    "musicalization": "Musicalization",
+    "producer": "Producer",
+    "announcer": "Announcer",
+    "composer": "Composer",
+    "singer": "Singer",
+    "go_back": "Go back"
+  },
+  "steps2":{
+    "important_in_musicians": "What do you consider important in the musicians you are looking for?",
+    "select_options_to_prioritize": "Select the options you want to prioritize",
+    "responsibility": "Responsibility",
+    "ownMaterial": "Have your own material",
+    "materialProactivity": "Proactivity in materials",
+    "personalBrand": "Have a personal brand",
+    "closeLocation": "Close to my location",
+    "onlyGroups": "Only groupings",
+    "creative": "Creative",
+    "beginnerExperience": "Beginner level experience",
+    "intermediateExperience": "Intermediate level experience",
+    "advancedExperience": "High level experience",
+    "generateProposals": "Generate proposals in the process",
+    "other": "Other",
+    "shareGoal": "Share your goal",
+    "maxCharacters": "500 characters max."
+  },
+  "steps3": {
+    "budget": "What is your budget?",
+    "range": "${{min}} USD - ${{max}} USD",
+    "average": "Average: ${{average}} USD",
+    "skip": "Skip",
+    "find": "Find the ideal service"
+  },
+  "countries": {
+    "US": "United States",
+    "SAL": "El Salvador"
+  },
+  "genderOptions": {
+    "M": "Male",
+    "F": "Female",
+    "O": "Other"
+  }
+  
 }

@@ -7,89 +7,93 @@ html, body {
   margin: 0;
 }
 .p-inputwrapper, .p-password, .p-dropdown, .p-calendar {
-  border: 2px solid #B4BAC5 ; /* Borde normal */
-  border-radius: 8px; /* Puedes cambiar el radio del borde */
-  transition: border-color 0.3s ease-in-out; /* Animación suave para el cambio de color */
+  border: 2px solid #B4BAC5 ; 
+  border-radius: 8px; 
+  transition: border-color 0.3s ease-in-out; 
 }
 
-/* Estilo de borde en foco para los componentes */
 .p-inputwrapper:focus-within, 
 .p-password:focus-within, 
 .p-dropdown:focus-within, 
 .p-calendar:focus-within {
-  border-color: #7505E0 !important; /* Borde cuando el componente está enfocado */
+  border-color: #7505E0;
 }
 
-/* Estilo global para el contenedor de los componentes */
-.p-inputwrapper, .p-password, .p-dropdown, .p-calendar, .p-inputtext {
-  border: 2px solid #B4BAC5 !important; /* Borde normal */
-  border-radius: 8px; /* Puedes cambiar el radio del borde */
-  transition: border-color 0.3s ease-in-out; /* Animación suave para el cambio de color */
-}
+/* .p-inputwrapper, .p-password, .p-dropdown, .p-calendar, .p-inputtext {
+  border: 2px solid #B4BAC5 !important;
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out;
+} */
 
-/* Estilo de borde en foco para los componentes */
 .p-inputwrapper:focus-within, 
 .p-password:focus-within, 
 .p-dropdown:focus-within, 
 .p-calendar:focus-within, 
 .p-inputtext:focus-within {
-  border-color: #7505E0 !important; /* Borde cuando el componente está enfocado */
+  border-color: #7505E0;
 }
 
-/* Estilo para los input de password, dropdown, calendar, y inputtext */
 .p-password-input, 
-.p-inputtext, 
+/* .p-inputtext,  */
 .p-dropdown-input, 
 .p-calendar input {
-  color: #333333; /* Color del texto */
-  border: none; /* Elimina el borde predeterminado */
-  outline: none; /* Elimina el contorno del foco */
-  padding: 8px 12px; /* Ajuste del padding */
-  font-size: 14px; /* Tamaño de fuente */
+  color: #333333;
+  /* border: none; */
+  /* outline: none; */
+  /* padding: 8px 12px;  */
+  font-size: 14px; 
 }
 
-/* Estilo cuando el componente tiene un borde de foco */
+
 .p-password-input:focus, 
 .p-inputtext:focus, 
 .p-dropdown-input:focus, 
 .p-calendar input:focus {
-  border-color: #7505E0 !important; /* Cambio de borde al hacer foco */
-  box-shadow: 0 0 0 2px rgba(117, 5, 224, 0.3); /* Sombra suave en foco */
+  border-color: #7505E0; 
+  box-shadow: 0 0 0 2px rgba(117, 5, 224, 0.3); 
 }
 
-/* Estilos para el componente Dropdown */
+
 .p-dropdown {
-  background-color: #ffffff; /* Fondo blanco para dropdown */
+  background-color: #ffffff; 
 }
 
-/* Estilos para el componente Calendar */
+
 .p-calendar .p-datepicker {
-  background-color: #ffffff; /* Fondo blanco para calendario */
+  background-color: #ffffff; 
 }
 
-/* Estilo para la etiqueta de los inputs */
+
 .p-inputtext:focus + .p-float-label, 
 .p-password-input:focus + .p-float-label, 
-/* .p-dropdown-input:focus + .p-float-label,  */
-.p-calendar input:focus + .p-float-label {
-  color: #7505E0; /* Color de la etiqueta cuando el componente está en foco */
+
+ .p-calendar:hover{
+  color: #7505E0 !important; 
 }
 
-/* Estilo de los botones dentro de los componentes */
 
-/* Estilo para el texto de los inputs */
+
+
 .p-inputtext::placeholder, 
 .p-password-input::placeholder, 
 .p-dropdown-input::placeholder, 
 .p-calendar input::placeholder {
-  color: #B4BAC5 !important; /* Color para los placeholders */
+  color: #B4BAC5; 
 }
 
 .p-dropdown-label {
-  border: none !important; /* Elimina el borde predeterminado */
-  height: 100%; /* Asegura que el label tome el 100% de la altura del contenedor */
+  border: none; 
+  height: 100%; 
   display: flex;
   align-items: center;
   size: 16px;
   font-weight: 400;
+}
+.p-checkbox .p-checkbox-box {
+  border: 2px solid #B4BAC5;
+  background-color: #b4bac5b1 !important;
+}
+
+.p-slider-handle {
+  border: 2px solid #B4BAC5;
 }

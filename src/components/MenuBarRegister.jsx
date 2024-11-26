@@ -15,7 +15,7 @@ const MenuBarRegister = () => {
   return (
     <div className='flex justify-between'>
       <Button
-        label="Submit" 
+        label={t("steps.go_back")} 
         icon={<FaArrowLeftLong  style={{ marginRight: '8px' }}/>} 
         className=''
         iconPos="left" 
