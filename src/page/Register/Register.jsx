@@ -37,7 +37,7 @@ const Register = () => {
 
   return (
       <div className='h-screen w-full p-8 flex '>
-        <div className='flex flex-col align-middle h-full w-4/6  mx-10'>
+        <div className='flex flex-col align-middle h-full lg:w-4/6 sm:w-full md:w-full mx-10 '>
           <MenuBarRegister/>
             {...changeToStep()}
           <footer className="text-center p-4">
@@ -45,7 +45,7 @@ const Register = () => {
           </footer>
         </div>
 
-        <div className='h-full w-2/6 bg-cover bg-center bg-no-repeat rounded-2xl'  style={{ backgroundImage: 'url("/src/assets/ef0a8a3dc7bd12aae8b9c6df6710d892.jpg"), radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%)'}}>
+        <div className='h-full sm:hidden md:hidden lg:grid lg:w-2/6 bg-cover bg-center bg-no-repeat rounded-2xl'  style={{ backgroundImage: 'url("/src/assets/ef0a8a3dc7bd12aae8b9c6df6710d892.jpg"), radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.5) 100%)'}}>
           <div className='flex flex-col h-full !justify-between '>
             <div className='w-full flex justify-end p-5'>
               <Button rounded type="submit" 

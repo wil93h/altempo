@@ -6,7 +6,6 @@ import { Password } from 'primereact/password';
 import { Calendar } from 'primereact/calendar';
 import { Dropdown } from 'primereact/dropdown';
 import { Button } from 'primereact/button';
-import { FloatLabel } from 'primereact/floatlabel';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import FormField from '../../../components/FormField';

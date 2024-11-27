@@ -1,11 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import { AutoComplete } from "primereact/autocomplete";
 import { FaSearch } from 'react-icons/fa';
 import { useState } from 'react';
-import { Dropdown } from 'primereact/dropdown';
-import { IconField } from "primereact/iconfield";
-import { InputIcon } from "primereact/inputicon";
 import { InputText } from "primereact/inputtext";
 import Musicalization from '../../../../assets/icons/Musicalization.svg';
 import Producer from '../../../../assets/icons/Producer.svg';

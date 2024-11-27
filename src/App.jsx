@@ -12,10 +12,6 @@ const Register = lazy(() => import('./page/Register/Register'));
 
 function App() {
   const { t } = useTranslation();
-  const routes = {
-    LOGIN: t('login'),
-    REGISTER: t('register'),
-  };
   return (
    <Suspense fallback={<>Cargando...</>}>
     <Provider store={store}>
