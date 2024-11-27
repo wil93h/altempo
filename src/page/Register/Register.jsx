@@ -1,16 +1,19 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import NavigationMenu from './components/NavigationMenu';
-import RegistrationOptions from './components/RegistrationOptions';
-import GeneralInformationForm from './components/GeneralInformationForm';
-import MenuBarRegister from '../../components/MenuBarRegister';
 import { Button } from 'primereact/button';
 import { TfiBackLeft } from "react-icons/tfi";
 import PlayCircle from '../../assets/icons/play-circle-02.svg';
-import StepOptions from './components/StepOptions';
 import { useState } from 'react';
-import NavigationMenuStep from './components/NavigationMenuStep';
 
+import { lazy } from 'react';
+import { Suspense } from 'react';
+
+const NavigationMenu = lazy(()=>import( './components/NavigationMenu'));
+const RegistrationOptions = lazy(()=>import( './components/RegistrationOptions'));
+const GeneralInformationForm = lazy(()=>import( './components/GeneralInformationForm'));
+const MenuBarRegister = lazy(()=>import( '../../components/MenuBarRegister'));
+const NavigationMenuStep = lazy(()=> import('./components/NavigationMenuStep'))
+const StepOptions = lazy(()=> import('./components/StepOptions'));
 
 const Register = () => {
   const { t } = useTranslation();
@@ -36,7 +39,7 @@ const Register = () => {
       <div className='h-screen w-full p-8 flex '>
         <div className='flex flex-col align-middle h-full w-4/6  mx-10'>
           <MenuBarRegister/>
-          {...changeToStep()}
+            {...changeToStep()}
           <footer className="text-center p-4">
             <small>{t('rightsReserved', { year })}</small>
           </footer>

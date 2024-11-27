@@ -21,12 +21,6 @@ const StepOptions = () => {
     },
   });
   const { watch } = methods
-  // const steps = [
-  //   { label: t('steps.step_of_total', { current: 1, total: 4 }), component: <Step1 /> },
-  //   { label: t('steps.step_of_total', { current: 2, total: 4 }), component: <Step2 /> },
-  //   { label: t('steps.step_of_total', { current: 3, total: 4 }), component: <Step3 /> },
-  // ];
-
 
   
   return (
